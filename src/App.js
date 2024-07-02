@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com'; 
-
+import emailjs from 'emailjs-com';
 function App() {
     const form = useRef();
 
@@ -8,7 +7,7 @@ function App() {
         e.preventDefault();
 
         emailjs
-            .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+            .sendForm('service_3eit01u', 'template_yzdqclg', form.current, 'JynKy1Y770myZYfWI')
             .then(
                 (result) => {
                     console.log('Email successfully sent!', result.text);
